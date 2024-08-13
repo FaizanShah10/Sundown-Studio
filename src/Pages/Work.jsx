@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import "../work.css"
+import "../index.css"
 import Navbar from '../Components/Navbar'
 import Footer from "../Components/Footer"
 
@@ -22,6 +23,13 @@ const Work = () => {
   return (
     <>
     <div ref={scrollRef} id='fullPage'>
+    <div id="menu-overlay">
+          <div id="menu">
+            <a href="/work">WORK</a>
+            <a href="/studio">STUDIO</a>
+            <a href="/contact">CONTACT</a>
+          </div>
+        </div>
         <Navbar/>
         <div id="center">
             <div id="moving-circle"></div>

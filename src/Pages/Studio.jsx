@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
 import "../studio.css"
+import "../index.css"
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -98,6 +99,13 @@ const Studio = () => {
     <div ref={scrollRef} id="main">
         
         <div id="page1">
+        <div id="menu-overlay">
+          <div id="menu">
+            <a href="/work">WORK</a>
+            <a href="/studio">STUDIO</a>
+            <a href="/contact">CONTACT</a>
+          </div>
+        </div>
         <Navbar/>
             <div id="page1-top">
                     <div id="circle"></div>

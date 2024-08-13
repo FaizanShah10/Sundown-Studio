@@ -47,7 +47,7 @@
     text-align: left;
     padding-top: 8vw;
     position: relative;
-    z-index: 99;
+    /* z-index: 99; */
   }
 
   #buttons{
@@ -155,14 +155,15 @@
         font-size: 7vh;
         text-align: left;
         padding-top: 4vw;
-        position: relative;
-        z-index: 99;
+        
       }
     
       #buttons{
-        width: 20vh;
+        width: 30vh;
         padding: 2vw 3vw;
         background-color: #EFEAE3; 
+        position: relative;
+        z-index: 10;
         
       }
     
@@ -189,18 +190,18 @@
        }
     
        .works #work1 img{
-        height: 35vh;
+        height: 60vh;
         width: 100%;
        }
     
        .works #work3  img{
-        height: 35vh;
+        height: 60vh;
         width: 100%;
         
        }
     
        .works video{
-        height: 35vh;
+        height: 60vh;
         width: 100%; 
        }
    }

@@ -682,19 +682,14 @@ nav h3{
 @media (max-width: 600px) {
   .page-1{
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #EFEAE3;
     padding: 1vh 6vw;
   }
   
-  nav{
-    padding: 2vh 0vw;
-    background-color: #EFEAE3;
-
-  }
 
   nav img{
-    height: 3.5vh;
+    height: 5vh;
   }
   
   
@@ -730,8 +725,11 @@ nav h3{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color: white;
-
-    padding: 38vw 8vw;
+    position: relative;
+    z-index: 999;
+    padding-bottom: 50vw;
+    padding-top: 20vw;
+    padding-right: 8vw;
    
   }
 
@@ -748,14 +746,14 @@ nav h3{
 
   /* Landing Page design */
   .Landing{
-    height: 62vh;
+    height: 70vh;
     width: 100%;
     /* background-color: orange; */
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     border-bottom: 1px solid #0000003c;
-    padding: 7vw 0vw;
+    padding: 1vw 0vw;
     padding-bottom: 10vw;
     flex-direction: column-reverse;
     position: relative;
@@ -770,6 +768,7 @@ nav h3{
   }
   
   .Landing #right h2{  
+    
     font-size: 17vw;
     text-align: right;
     line-height: 15vw;
@@ -961,6 +960,7 @@ nav h3{
   font-size: 6vw;
   font-family: "Grotesk-Medium";
   margin: 10px 0;
+  text-align: left;
 }
 
 
@@ -994,7 +994,7 @@ nav h3{
   background-color: #000000;
   display: flex;
   flex-direction: column; 
-  height: 45vh; 
+  height: 100%; 
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
@@ -1013,6 +1013,7 @@ nav h3{
   line-height: 6vw; 
   font-family: "Grotesk-Medium";
   margin-bottom: 2vw;
+  text-align: left;
 }
 
 #text-part #headings {

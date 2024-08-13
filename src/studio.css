@@ -119,12 +119,12 @@
    }
 
    #page1-bottom img{
-    height: 50vh;
-    width: 20vw;
+    height: 60vh;
+    width: 30vw;
     border-radius: 20px;
     margin-left: 4vw;
     position: relative;
-    z-index: 99;
+    z-index: 10;
    }
 
    #page1-bottom h4{
@@ -216,8 +216,7 @@
     padding: 0 2vw;
   }
   
-  
-  
+
   .swiper-slide {
     width: 30%;
   }
@@ -251,12 +250,16 @@
       font-family: "Grotesk-Medium";
       font-size: 12vw;
       line-height: 9vw;
+      position: relative;
+      z-index: 9;
     }
   
     #page1-top #text h3{
       font-family: "Grotesk-Medium";
       font-size: 12vw;
       line-height: 9vw;
+      position: relative;
+      z-index: 9;
     }
   
  
