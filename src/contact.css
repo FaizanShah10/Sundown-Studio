@@ -1,0 +1,204 @@
+@font-face {
+    font-family: Grotesk-Roman;
+    src: url(/Fonts/NeueHaasDisplayRoman.ttf);
+  }
+  
+  @font-face {
+    font-family: Grotesk-Medium;
+    src: url(/Fonts/NeueHaasDisplayMediu.ttf);
+  }
+  
+  @font-face {
+    font-family: Grotesk-Bold;
+    src: url(/Fonts/NeueHaasDisplayBold.ttf);
+  }
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Grotesk-Roman";
+  }
+  
+  html, body{
+    height: 100%;
+    width: 100%;
+  }
+
+ #container{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #EFEAE3;  
+  padding: 6vw 5vw;
+  position: relative;
+  z-index: 10;
+  padding: 2vw 4vw;
+
+ }
+
+
+ .main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;  
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 5vw;
+    position: relative;
+    z-index: 10;
+    
+ }
+
+ .main img{   
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+ }
+
+ .main #text-part{
+   position: relative;
+   padding-top: 1vw;
+   
+ }
+
+ #text-part #moving-circle{
+  height: 23vw;
+  width: 23vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+  /* background: linear-gradient(to top right,red,blue); */
+  top: 50%;
+  left: 25%;
+  filter: blur(20px);
+  animation-name: circle-animation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+ }
+
+ @keyframes circle-animation {
+  from {
+    filter: blur(20px);
+    transform: translate(10%, -10%) skew(0);
+}
+
+to {
+    filter: blur(30px);
+    transform: translate(-10%, 10%) skew(-12deg);
+}
+ }
+
+ .main #text-part h2{
+  padding-left: 15vw;
+    font-size: 7vw;
+    line-height: 6vw;
+    text-align: right;
+
+
+
+ }
+
+ .main #text-part h4{
+  padding-left: 15vw;
+    font-size: 2vw;
+    font-family: "Grotesk-Medium";
+    text-align: right; 
+    position: relative;
+    z-index: 9;
+
+ }
+
+ .main #text-part #text-part-2{
+  padding: 4vw 8vw;
+  position: relative;
+  z-index: 999;
+ }
+
+ .main #text-part h3{
+
+    font-size: 4vh;
+    font-weight: bold;
+ }
+
+ #page5{
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+
+
+  #container {
+    width: 100%;
+    padding: 0;
+    background-color: transparent; 
+    height: auto;
+  }
+
+  #container nav{
+    padding: 6vw 4vw;
+  }
+  
+
+  .main {
+    width: 100%;
+    background-color: #EFEAE3;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 6vw 4vw;
+    position: relative;
+    z-index: 10;
+    height: 100vw; 
+  }
+
+  .main img {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #text-part #moving-circle {
+    height: 18vh;
+    width: 18vh;
+  }
+
+  .main #text-part h2 {
+    font-size: 12vw;
+    line-height: 10vw;
+    text-align: right;
+  }
+
+  .main #text-part h4 {
+    font-size: 4vw;
+    font-family: "Grotesk-Medium";
+    text-align: right;
+    position: relative;
+    z-index: 9;
+  }
+
+  .main #text-part #text-part-2 {
+    padding: 4vw 0vw;
+    position: relative;
+    z-index: 999;
+  }
+
+  .main #text-part h3 {
+    font-size: 4.5vw;
+  }
+
+  #page5 {
+    display: none;
+  }
+
+  #footer {
+    display: none;
+  }
+}
+
+

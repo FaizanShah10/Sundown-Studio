@@ -1,0 +1,206 @@
+@font-face {
+    font-family: Grotesk-Roman;
+    src: url(/Fonts/NeueHaasDisplayRoman.ttf);
+  }
+  
+  @font-face {
+    font-family: Grotesk-Medium;
+    src: url(/Fonts/NeueHaasDisplayMediu.ttf);
+  }
+  
+  @font-face {
+    font-family: Grotesk-Bold;
+    src: url(/Fonts/NeueHaasDisplayBold.ttf);
+  }
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Grotesk-Roman";
+  }
+  
+  html, body{
+    height: 100%;
+    width: 100%;
+  }
+
+  #fullPage{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEAE3;
+    padding: 1vw 2vw;
+    position: relative;
+    z-index: 10;
+  }
+
+  #center-bottom{
+    height: 20vh;
+    width: 100%;
+  }
+
+ 
+  #center h2{
+    font-family: "Grotesk-Medium";
+    font-size: 10vw;
+    text-align: left;
+    padding-top: 8vw;
+    position: relative;
+    z-index: 99;
+  }
+
+  #buttons{
+    width: 23vw;
+    padding: 1vw 2vw;
+    background-color: #EFEAE3;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    border: 0.5px solid rgba(0, 0, 0, 0.583);
+    position: relative;
+    z-index: 100;
+  }
+
+  #buttons button{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+  }
+
+  #moving-circle{
+    height: 50vw;
+    width: 50vw;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #ff2d03, #fa4706);
+    /* background: linear-gradient(to top right,red,blue); */
+    top: 15%;
+    left: 15%;
+    filter: blur(20px);
+    animation-name: circle-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+   }
+  
+   
+  
+
+  @keyframes circle-animation {
+    from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+  
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+   }
+
+   .works{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    padding-top: 20vw;
+    position: relative;
+    z-index: 10;
+
+   }
+
+   .works #work1 img{
+    height: 40vh;
+    width: 20vw;
+    object-fit: cover;
+    border-radius: 20px;
+   }
+
+   .works #work3  img{
+    height: 30vh;
+    width: 20vw;
+    object-fit: cover;
+    border-radius: 20px;
+   }
+
+   .works video{
+    height: 50vh;
+    width: 20vw;
+    object-fit: cover;
+    border-radius: 20px;
+   }
+
+   @media (max-width:600px) {
+    #fullPage{
+        padding: 1vw 4vw;
+        position: relative;
+        z-index: 10;
+      }
+    
+      #center-bottom{
+        height: 60vh;
+        width: 100%;
+        background-color: #EFEAE3;
+      }
+    
+     
+      #center h2{
+        font-family: "Grotesk-Medium";
+        font-size: 7vh;
+        text-align: left;
+        padding-top: 4vw;
+        position: relative;
+        z-index: 99;
+      }
+    
+      #buttons{
+        width: 20vh;
+        padding: 2vw 3vw;
+        background-color: #EFEAE3; 
+        
+      }
+    
+    
+    
+      #moving-circle{
+        height: 25vh;
+        width: 25vh;
+        top: 15%;
+        left: 10%;
+    
+       }
+
+       .works{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        gap: 10vw;
+        padding-top: 20vw;
+        position: relative;
+        z-index: 10;
+    
+       }
+    
+       .works #work1 img{
+        height: 35vh;
+        width: 100%;
+       }
+    
+       .works #work3  img{
+        height: 35vh;
+        width: 100%;
+        
+       }
+    
+       .works video{
+        height: 35vh;
+        width: 100%; 
+       }
+   }

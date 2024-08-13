@@ -1,0 +1,370 @@
+@font-face {
+    font-family: Grotesk-Roman;
+    src: url(/Fonts/NeueHaasDisplayRoman.ttf);
+  }
+  
+  @font-face {
+    font-family: Grotesk-Medium;
+    src: url(/Fonts/NeueHaasDisplayMediu.ttf);
+  }
+  
+  @font-face {
+    font-family: Grotesk-Bold;
+    src: url(/Fonts/NeueHaasDisplayBold.ttf);
+  }
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Grotesk-Roman";
+  }
+  
+  html, body{
+    height: 100%;
+    width: 100%;
+  }
+
+  #main{
+    position: relative;
+  }
+
+  #page1{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #EFEAE3;
+    padding: 1vw 2vw;
+  }
+
+  #page1-top{
+    display: flex;
+    /* justify-content: center; */
+    padding: 8vw 17vw;
+  }
+
+  #page1-top #text h1{
+    font-family: "Grotesk-Medium";
+    font-size: 11vw;
+    line-height: 8.5vw;
+  }
+
+  #page1-top #text h2{
+    font-family: "Grotesk-Medium";
+    font-size: 11vw;
+    line-height: 8.5vw;
+  }
+
+  #page1-top #text h3{
+    font-family: "Grotesk-Medium";
+    font-size: 11vw;
+    line-height: 8.5vw;
+  }
+
+  #page1-top #text h1, h2{
+    text-align: right;
+  }
+
+  #page1-top #text h1{
+    position: relative;
+    z-index: 9;
+  }
+
+  #page1-top #text h2, h3{
+    position: relative;
+    z-index: 99;
+  }
+
+  #page1-top #text h3{
+    text-align: left;
+    padding-left: 3vw;
+  }
+
+  #page1-top #circle{
+    height: 38vw;
+    width: 38vw;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #ff2d03, #fa4706);
+    /* background: linear-gradient(to top right,red,blue); */
+    top: 30%;
+    left: 12%;
+    filter: blur(20px);
+    animation-name: circle-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+   }
+  
+   @keyframes circle-animation {
+    from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+  
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+   }
+
+
+   #page1-bottom{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+   }
+
+   #page1-bottom img{
+    height: 50vh;
+    width: 20vw;
+    border-radius: 20px;
+    margin-left: 4vw;
+    position: relative;
+    z-index: 99;
+   }
+
+   #page1-bottom h4{
+    position: relative;
+    z-index: 99;
+    width: 70vw;
+    font-size: 2.5vw;
+    padding: 0 10vw;
+    font-family: "Grotesk-Medium";
+   }
+
+   .page2{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#EFEAE3, #FF9128);
+    padding: 3vw 0;
+   }
+
+   .page2 #create-section #top h1{
+    font-size: 24vw;
+    text-align: center;
+    font-family: "Grotesk-Medium";
+   }
+
+   .page2 #bottom{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    text-align: left;
+    padding: 2vw 4vw;
+    /* gap: 30vw; */
+   }
+
+   .page2 #bottom #left h5{
+    width: 27vw;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    font-family: "Grotesk-Medium";
+   }
+
+   .page2 #bottom #right{
+    width: 30vw;
+   }
+
+   
+
+   .page2 #bottom #right #list{
+            display: flex;
+            gap: 4vw;
+            border-bottom: 1px solid rgb(53, 53, 53);
+            padding: 1.5vw 0        
+   }
+
+   #produce-section #top h1{
+        font-size: 20vw;
+        text-align: center;
+        font-family: "Grotesk-Medium";
+   }
+
+   .page2 h4{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 6vw;
+    padding-top: 10vw;
+    font-size: 1vw;
+    font-family: "Grotesk-Roman";
+    color: rgb(0, 0, 0);
+    margin-bottom: 5vw;
+  }
+  
+  .page2 #circle{
+    width: 0.7vw;
+    height: 0.7vw;
+    background-color: #ff2d03;
+    border-radius: 50%;
+  }
+   
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .swiper-slide {
+    width: 30%;
+    border-left: 1px solid #aeadad;
+    padding: 0 2vw;
+  }
+  
+  
+  
+  .swiper-slide {
+    width: 30%;
+  }
+
+  #page5{
+    height: 100vh;
+    width: 100%;
+  }
+
+
+  /* RESPONSIVENESS */
+  @media (max-width:600px) {
+    #page1{    
+      min-height: 60vh;
+      padding: 1vw 4vw;
+    }
+  
+    #page1-top{
+      display: flex;
+      /* justify-content: center; */
+      padding: 8vw 12vw;
+    }
+  
+    #page1-top #text h1{
+      font-family: "Grotesk-Medium";
+      font-size: 12vw;
+      line-height: 9vw;
+    }
+  
+    #page1-top #text h2{
+      font-family: "Grotesk-Medium";
+      font-size: 12vw;
+      line-height: 9vw;
+    }
+  
+    #page1-top #text h3{
+      font-family: "Grotesk-Medium";
+      font-size: 12vw;
+      line-height: 9vw;
+    }
+  
+ 
+  
+    #page1-top #circle{
+      height: 23vh;
+      width: 23vh;
+      /* background: linear-gradient(to top right,red,blue); */
+      top: 20%;
+      left: 12%;
+      
+     }
+
+     keyframes circle-animation {
+      from {
+        filter: blur(20px);
+        transform: translate(-5%, 5%) skew(0);
+    }
+    
+    to {
+        filter: blur(30px);
+        transform: translate(10%, -10%) skew(12deg);
+    }
+     }
+
+     #page1-bottom{
+      display: block;
+     }
+  
+     #page1-bottom img{
+      height: 17vh;
+      width: 12vh;
+      margin-top: 4vh;
+     }
+  
+     #page1-bottom h4{
+      width: 100%;     
+      font-size: 4.5vw;
+      padding: 4vw;
+     }
+
+
+     .page2{
+      width: 100%;
+      min-height: 100vh;
+      background: linear-gradient(to bottom,#EFEAE3, #FF9128);
+      padding: 3vw 0;
+     }
+  
+     .page2 #create-section #top h1{
+      font-size: 24vw;
+      text-align: center;
+      font-family: "Grotesk-Medium";
+     }
+  
+     .page2 #bottom{
+      display: block;
+      width: 100vw;
+      text-align: left;
+      padding: 5vw 4vw;
+      /* gap: 30vw; */
+     }
+  
+     .page2 #bottom #left h5{
+      width: 100%;
+      font-size: 5vw;
+      line-height: 5vw;
+      padding: 5vw 0;
+      font-family: "Grotesk-Medium";
+     }
+  
+     .page2 #bottom #right{
+      width: 100%;
+     }
+  
+     .page2 #bottom #right #list{
+              padding: 4vw 0        
+     }
+  
+     #produce-section #top h1{
+          font-size: 20vw;
+          text-align: center;
+          font-family: "Grotesk-Medium";
+     }
+  
+     .page2 h4{
+      padding: 10vw 4vw;
+      font-size: 3.5vw;
+      
+    }
+    
+    .page2 #circle{
+      width: 2vw;
+      height: 2vw;
+      
+    }
+     
+  
+   
+
+    .swiper-slide {
+      width: 60%;
+    }
+    
+    .footer{
+      display: none;
+    }
+    
+  
+    
+  }
