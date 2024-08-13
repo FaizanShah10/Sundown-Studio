@@ -3,6 +3,7 @@ import "../work.css"
 import "../index.css"
 import Navbar from '../Components/Navbar'
 import Footer from "../Components/Footer"
+import {Link} from "react-router-dom"
 
 import locomotiveScroll from "locomotive-scroll"
 import { useGSAP } from '@gsap/react'
@@ -25,9 +26,9 @@ const Work = () => {
     <div ref={scrollRef} id='fullPage'>
     <div id="menu-overlay">
           <div id="menu">
-            <a href="/work">WORK</a>
-            <a href="/studio">STUDIO</a>
-            <a href="/contact">CONTACT</a>
+          <Link className='nav-link' to="/work"><h4><a href="#">Work</a></h4></Link>
+              <Link className='nav-link' to="/studio"><h4><a href="#">Studio</a></h4></Link>
+              <Link className='nav-link' to="/contact"><h4><a href="#">Contact</a></h4></Link>
           </div>
         </div>
         <Navbar/>

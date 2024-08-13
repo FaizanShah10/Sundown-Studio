@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import {Link} from "react-router-dom"
 import "../contact.css"
 import "../index.css"
 
@@ -59,9 +60,9 @@ const Contact = () => {
     <div ref={scrollRef} id='container'>
     <div id="menu-overlay">
           <div id="menu">
-            <a href="#">WORK</a>
-            <a href="#">STUDIO</a>
-            <a href="#">CONTACT</a>
+          <Link className='nav-link' to="/work"><h4><a href="#">Work</a></h4></Link>
+              <Link className='nav-link' to="/studio"><h4><a href="#">Studio</a></h4></Link>
+              <Link className='nav-link' to="/contact"><h4><a href="#">Contact</a></h4></Link>
           </div>
         </div>
         <Navbar/>
